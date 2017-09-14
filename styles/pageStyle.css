@@ -1,0 +1,78 @@
+.header {
+    text-align: center;
+    color: salmon;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#client-name {
+    color: green;
+    font-size: 1.3em;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+}
+
+.card-container {
+    border: 1px solid;
+    border-color: black;
+    border-radius: 4px;
+    height: 275px;
+    margin: 7px;
+    padding: 2px;
+}
+
+.card-header {
+    background-color: lightgrey;
+    text-align: center;
+    font-size: 1.3em;
+    color: black;
+}
+
+.card-holder {
+    margin-top: 45px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 1.3em;
+    color: darkgoldenrod;
+}
+
+.active {
+    text-align: center;
+    color: black;
+    font-size: 1.3em;
+    background-color: #06C406;
+    padding: 2px;
+}
+
+.inactive {
+    text-align: center;
+    color: black;
+    font-size: 1.3em;
+    background-color: #8E8F8E;
+    padding: 2px;
+}
+
+.infobox {
+    background-color: whitesmoke;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 5px;
+    color: darkgoldenrod;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+}
+
+.btn {
+    margin: 3px;
+}
+
+table {
+    text-align: left;
+}

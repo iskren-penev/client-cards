@@ -1,0 +1,22 @@
+{
+    "name": "gym-realm-client-cards",
+    "version": "1.0.0",
+    "description": "Simple application to display the info about the cards bought by a client",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/iskren-penev/client-cards.git"
+    },
+    "author": "Iskren Penev",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/iskren-penev/client-cards/issues"
+    },
+    "homepage": "https://github.com/iskren-penev/client-cards#readme",
+    "dependencies": {
+        "jquery": "^3.2.1"
+    }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Cards</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/pageStyle.css">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/handlebars/dist/handlebars.min.js"></script>
+    <script src="./scripts/app.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>User Cards</h1>
+    </header>
+
+    <div id="card-container" class="container-fluid">
+        <div class="row"></div>
+    </div>
+    <div class="container">
+        <div id="info-container" class="row"></div>
+    </div>
+
+    <script>
+        var data = {
+            "ClientName": "PETER PETROV",
+            "Cards": [{
+                "CardNumber": "1024",
+                "CardHolderName": "IVAN IVANOV",
+                "CardStatus": "ACTIVE",
+                "ActiveUntil": "2017-01-18",
+                "Orders": [{
+                    "OrderNumber": "001",
+                    "OrderDate": "2016-11-18",
+                    "OrderType": "ORDER"
+                }, {
+                    "OrderNumber": "002",
+                    "OrderDate": "2016-12-18",
+                    "OrderType": "RECHARGE"
+                }, {
+                    "OrderNumber": "003",
+                    "OrderDate": "2017-01-05",
+                    "OrderType": "REPLACE"
+                }]
+            }, {
+                "CardNumber": "1025",
+                "CardHolderName": "DIMITAR PETROV",
+                "CardStatus": "INACTIVE",
+                "ActiveUntil": "2016-01-10",
+                "Orders": [{
+                    "OrderNumber": "004",
+                    "OrderDate": "2016-12-10",
+                    "OrderType": "ORDER"
+                }, ]
+            }]
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+
+</html>

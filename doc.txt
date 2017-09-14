@@ -1,0 +1,11 @@
+Our new style of coding is focused on declarative, data-driven views. This allows us to describe how we want the data rendered and then easily react to data changes.
+
+In this task we have a dashboard where a client can manage the cards they have purchased. Each card has several properties: the card's "number", used for identification purposes, the name of the "card holder"(a person who might be different from the client, e.g. their wife/friend), a status(is the card usable or not?) and the date up to which the card can be used. For each card we also have a record of "orders" relating to it - the order to purchase the card, "recharge" orders to extend its active duration, and possible "replace" orders if the card has been lost.
+
+We want to visualize the cards that the client owns and allow the client to view the details for each card. There's a sample design how to achieve this in the archive(you don't have to stick to it rigidly).
+
+Besides the visualization functionality, I would like you to implement a simple "recharge card" action. When the user has selected a card and clicks the "recharge card for one month" button, the system should modify the data accordingly(extend its ActiveUntil duration by one month, switch it to ACTIVE if the ActiveUntil date is higher than the current date, and record a "recharge" order), and then render all the changes. As an example, if I press the button for card 1025 on the sketch, I would expect the "INACTIVE" indicator to change to "ACTIVE", and if I click its details I would expect to see an extra order.
+
+I've added some sample data along with the archive. I suggest that you load the data in a global variable to avoid possible CORS issues trying to fetch the json from a non-hosted page(there's an example html file doing that).
+
+You can use whatever libraries or frameworks you prefer when developing the solution. If you have any questions, don't hesitate to mail! :)
